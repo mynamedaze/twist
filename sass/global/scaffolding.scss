@@ -1,50 +1,69 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-.visually-hidden{
-  position: absolute;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
+.main-page {
   overflow: hidden;
-}
-.visually-hidden2{
-  height: 0px !important;
-  overflow: hidden;
-}
-main {
-  overflow: hidden;
-}
-input[type="submit"] {
-  cursor: pointer;
-}
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="text"]:focus,
-textarea:focus {
-  outline: none;
-}
-input:focus,
-button:focus {
-  outline-width: 0;
-  outline: none;
-}
-button {
-  cursor: pointer;
-}
-label {
-  cursor: pointer;
-}
-.clearfix::after {
-  content: ""; /* Генерируем пустой элемент */
-  clear: both; /* Отменяем обтекание*/
-  display: block; /* Блочный элемент */
-}
-.disable {
-  display: none !important;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    transition: all 0.2s ease 0s;
+    font-size: 14px;
+    font-family: $font--main;
+    @media #{$min-desktop-width} {
+      font-size: 16px;
+    }
+  }
+  .visually-hidden{
+    position: absolute;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  input[type="submit"] {
+    cursor: pointer;
+  }
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="text"]:focus,
+  textarea:focus {
+    outline: none;
+  }
+  input:focus,
+  button:focus {
+    outline-width: 0;
+    outline: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  label {
+    cursor: pointer;
+  }
+  .clearfix::after {
+    content: ""; /* Генерируем пустой элемент */
+    clear: both; /* Отменяем обтекание*/
+    display: block; /* Блочный элемент */
+  }
+  .disable {
+    display: none !important;
+  }
+  a {
+    color: $color--main;
+    text-decoration: underline;
+  }
+  .strong {
+    font-weight: 700;
+  }
+  p {
+    line-height: 22.4px;
+    @media #{$min-desktop-width} {
+      line-height: 25.6px;
+    }
+  }
 }

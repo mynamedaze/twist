@@ -3,39 +3,31 @@ $max-mobile-width: "(max-width: 767px)";
 $max-mobile-wrapper: 540px;
 
 $min-tablet-width: "(min-width: 768px)";
-$max-tablet-width: "(max-width: 1199px)";
+$max-tablet-width: "(max-width: 1140px)";
 $max-tablet-wrapper: 960px;
 
-$min-desktop-width: "(min-width: 1200px)";
-$max-desktop-wrapper: 1200px;
+$min-desktop-width: "(min-width: 1141px)";
+$max-desktop-wrapper: 1300px;
 
 $min-fullhd-width: "(min-width: 1921px)";
 
 //blocks
-$padding--mobile: 10px;
-$padding--tablet: 20px;
+$padding--mobile: 20px;
+$padding--tablet: 45px;
+$padding--desktop: 50px;
 
 //text
-$color--main: #000000;
-$color--alt1: #ffffff;
-$color--alt2: #8b623d;
+$color--main: #1A1C00;
+$color--alt: #74BE0F;
 
-$font--main:  "geometria", Arial, sans-serif;
-$font--alt: "old-standard-tt", Times, serif;
+$font--title:  "Gagalin", Arial, sans-serif;
+$font--subtitle: "Caveat", Arial, serif;
+$font--main: "Rubik", Arial, serif;
 
+
+//inputs buttons
+$border-main: #1A1C00;
 //backgrounds
 $bg--main: #ffffff;
-$bg--alt1: #e4e1dc;
-$bg--alt2: #f6f5f3;
 
 $box-shadow: 0 3px 21px 0 rgba(176, 173, 168, .4);
-
-$bg--cards: #fffffe;
-
-$bg--5000: #faf9f8;
-
-$bg--utp: #f9f7f4;
-
-$bg--button: #a9907a;
-
-$bg--footer: #e4e1dc;

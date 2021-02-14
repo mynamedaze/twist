@@ -3,5 +3,19 @@
 @import "./global/variables";
 @import "./global/scaffolding";
 @import "./global/mixins";
+@import "./global/common";
+
+//components
+@import "./blocks/confid";
 
 //blocks
+@import "./blocks/intro";
+@import "./blocks/utp";
+@import "./blocks/offline";
+@import "./blocks/offmap";
+@import "./blocks/natural";
+@import "./blocks/choose";
+@import "./blocks/need";
+@import "./blocks/vs";
+@import "./blocks/sertif";
+@import "./blocks/partners";

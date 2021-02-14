@@ -1,3 +1,6 @@
+@mixin section-width {
+  max-width: $max-desktop-wrapper;
+}
 @mixin paddings {
   @media #{$max-mobile-width} {
     padding-left: $padding--mobile;
@@ -7,68 +10,22 @@
     padding-left: $padding--tablet;
     padding-right: $padding--tablet;
   }
+  @media #{$min-desktop-width} {
+    padding-left: $padding--desktop;
+    padding-right: $padding--desktop;
+  }
 }
 @mixin centers {
   margin-left: auto;
   margin-right: auto;
 }
-@mixin link {
-  font-family: $font--alt;
-  color: $color--alt2;
-  text-decoration: underline;
-  font-size: 16px;
-  letter-spacing: 1px;
-  position: relative;
-  &::after {
-    position: absolute;
-    content: "";
-    right: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 22px;
-    height: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url("/wp-content/themes/petrov-v3/img/arrow.svg");
+@mixin custom-owl-navs {
+  .owl-dots .owl-dot span {
+    width: 85px;
+    height: 5px;
+    border-radius: 0;
   }
-}
-@mixin defaults {
-  font-family: $font--main;
-  font-weight: 400;
-  color: $color--main;
-  margin: 0;
-  font-size: 14px;
-  transition: all 0.2s ease 0s;
-  input,
-  textarea,
-  select {
-    font-size: 14px;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  ul {
-    list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-    transition: all 0.2s ease 0s;
-  }
-}
-@mixin btn--20 {
-  color: $color--alt1;
-  font-size: 14px;
-  background-color: #000;
-  height: 60px;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-family: "geometria", Arial, sans-serif !important;
-  border: 1px solid $color--main;
-  &:hover {
-    background-color: transparent;
-    color: $color--main;
-    border: 1px solid $color--main;
+  .owl-dots .owl-dot.active span {
+    background-color: $color--main;
   }
 }

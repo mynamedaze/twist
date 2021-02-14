@@ -1,0 +1,92 @@
+.common-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $font--title;
+  font-weight: 400;
+  @media #{$max-mobile-width} {
+    font-size: 42px;
+    letter-spacing: 1.2px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 49px;
+    letter-spacing: 1.4px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 70px;
+    letter-spacing: 2px;
+  }
+}
+.common-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $font--subtitle;
+  font-weight: 400;
+  @media #{$max-mobile-width} {
+    font-size: 42px;
+    line-height: 39px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 42px;
+    line-height: 39px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 60px;
+    line-height: 57px;
+  }
+}
+.common-input {
+  height: 50px;
+  border-top: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 2px solid $border-main;
+  background-color: transparent;
+}
+.common-input::-webkit-input-placeholder {color: $border-main;}
+.common-input::-moz-placeholder          {color: $border-main;}/* Firefox 19+ */
+.common-input:-moz-placeholder           {color: $border-main;}/* Firefox 18- */
+.common-input:-ms-input-placeholder      {color: $border-main;}
+.common-button {
+  border-radius: 5px;
+  background-color: transparent;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  border: 0 solid transparent;
+  span {
+    position: relative;
+    z-index: 3;
+  }
+  &::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  &::after {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid $border-main;
+  }
+  &:hover {
+    &:before {
+      transition: transform 0.5s ease 0.2s;
+      background-color: #74BE0F;
+      transform: translate(7px, 7px);
+    }
+  }
+}

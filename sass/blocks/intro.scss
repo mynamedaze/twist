@@ -1,0 +1,126 @@
+.intro {
+  .intro__wrapper {
+    @include section-width;
+    @include paddings;
+    @include centers;
+    position: relative;
+    @media #{$max-mobile-width} {
+      padding-top: 130px;
+    }
+    @media #{$min-tablet-width} {
+      padding-top: 98px;
+      padding-bottom: 79px;
+    }
+    @media #{$min-desktop-width} {
+      padding-top: 140px;
+      padding-bottom: 113px;
+    }
+  }
+  .intro__container {
+    position: relative;
+    z-index: 3;
+    @media #{$min-tablet-width} {
+      width: 413px;
+    }
+    @media #{$min-desktop-width} {
+      width: 590px;
+    }
+  }
+  .intro__title {
+    @media #{$max-mobile-width} {
+      font-size: 52px;
+      text-align: center;
+    }
+    @media #{$min-tablet-width} {
+      font-size: 70px;
+    }
+    @media #{$min-desktop-width} {
+      font-size: 110px;
+    }
+  }
+  .intro__subtitle {
+    margin-bottom: 0;
+    font-family: $font--subtitle;
+    font-weight: 400;
+    color: $color--alt;
+    @media #{$max-mobile-width} {
+      font-size: 30px;
+      line-height: 31px;
+      margin-top: 10px;
+      max-width: 300px;
+      @include centers;
+      text-align: right;
+    }
+    @media #{$min-tablet-width} {
+      width: 252px;
+      margin-left: auto;
+      margin-right: 0;
+      transform: translateX(-14px);
+      line-height: 28px;
+      margin-top: 7px;
+      font-size: 28px;
+    }
+    @media #{$min-desktop-width} {
+      width: 360px;
+      margin-left: auto;
+      margin-right: 0;
+      transform: translateX(20px);
+      line-height: 40px;
+      margin-top: 10px;
+      font-size: 40px;
+    }
+  }
+  .intro__bg-container {
+    position: relative;
+    @media #{$max-mobile-width} {
+      margin-top: 77px;
+      height: 320px;
+    }
+    @media #{$min-tablet-width} {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      top: 0;
+    }
+  }
+  .intro__product-wrapper {
+    position: absolute;
+    z-index: 3;
+    @media #{$max-mobile-width} {
+      width: 303px;
+      left: 50%;
+      top: 0;
+      transform: translateX(-65%);
+    }
+    @media #{$min-tablet-width} {
+      right: 35px;
+      top: 24px;
+      width: 281px;
+    }
+    @media #{$min-desktop-width} {
+      right: 50px;
+      top: 35px;
+      width: 402px;
+    }
+  }
+  .intro__splash-wrapper {
+    z-index: 2;
+    position: absolute;
+    @media #{$max-mobile-width} {
+      width: 429px;
+      left: 50%;
+      top: -15px;
+      transform: translateX(-50%);
+    }
+    @media #{$min-tablet-width} {
+      width: 429px;
+      right: -98px;
+      top: -4px;
+    }
+    @media #{$min-desktop-width} {
+      width: 613px;
+      right: -140px;
+      top: -5px;
+    }
+  }
+}

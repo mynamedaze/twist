@@ -1,0 +1,109 @@
+.need {
+  .need__wrapper {
+    @include paddings;
+    @include section-width;
+    @include centers;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    @media #{$min-tablet-width} {
+      display: flex;
+    }
+    @media #{$min-desktop-width} {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  .need__juice-bg {
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media #{$max-mobile-width} {
+      left: 0;
+      top: 0;
+      width: 109px;
+      height: 169px;
+      background-image: url("/wp-content/themes/twist/img/need__juice-bg--mobile.png");
+    }
+    @media #{$min-tablet-width} {
+      left: 0;
+      top: 0;
+      width: 147px;
+      height: 183px;
+      background-image: url("/wp-content/themes/twist/img/need__juice-bg--tablet.png");
+    }
+    @media #{$min-desktop-width} {
+      left: -110px;
+      top: 160px;
+      width: 210px;
+      height: 261px;
+      background-image: url("/wp-content/themes/twist/img/need__juice-bg--desktop.png");
+    }
+  }
+  .need__splash-bg {
+    position: absolute;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("/wp-content/themes/twist/img/natural__splash-bg--tablet.png");
+    @media #{$max-mobile-width} {
+      left: 0;
+      top: 0;
+      width: 109px;
+      height: 169px;
+    }
+    @media #{$min-tablet-width} {
+      left: -381px;
+      top: -21px;
+      width: 473px;
+      height: 405px;
+    }
+    @media #{$min-desktop-width} {
+      left: -545px;
+      top: -30px;
+      width: 677px;
+      height: 580px;
+      background-image: url("/wp-content/themes/twist/img/natural__splash-bg--desktop.png");
+    }
+  }
+  .need__title {
+    position: relative;
+    z-index: 2;
+    @media #{$max-mobile-width} {
+      max-width: 245px;
+      @include centers;
+    }
+    @media #{$min-tablet-width} {
+      width: 245px;
+      flex-shrink: 0;
+    }
+    @media #{$min-desktop-width} {
+      width: 350px;
+    }
+  }
+  .need__text-container {
+    position: relative;
+    z-index: 2;
+    @media #{$max-mobile-width} {
+      padding-top: 18px;
+    }
+    @media #{$min-tablet-width} {
+      padding-top: 75px;
+      padding-left: 40px;
+    }
+  }
+  .need__paragraph {
+    @media #{$max-mobile-width} {
+      margin-top: 23px;
+    }
+    @media #{$min-tablet-width} {
+      margin-top: 21px;
+    }
+    @media #{$min-desktop-width} {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.utp {
+  position: relative;
+  z-index: 3;
+  @media #{$min-tablet-width} {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  .utp__wrapper {
+    @include section-width;
+    @include paddings;
+    @include centers;
+    @media #{$max-mobile-width} {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+  }
+  .utp__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+    @media #{$min-tablet-width} {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .utp__item {
+    position: relative;
+    @media #{$max-mobile-width} {
+      font-size: 16px;
+      line-height: 22px;
+      padding-top: 60px;
+      margin-top: 30px;
+    }
+    @media #{$min-tablet-width} {
+      padding-right: 14px;
+      font-size: 14px;
+      line-height: 20px;
+      padding-top: 42px;
+      width: 33%;
+    }
+    @media #{$min-desktop-width} {
+      padding-right: 20px;
+      font-size: 18px;
+      line-height: 26px;
+      padding-top: 60px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: linear-gradient(145.33deg, #A2BF7B -8.9%, #F9FF9A 88.86%);
+
+      @media #{$max-mobile-width} {
+        width: 78px;
+        height: 47px;
+        border-radius: 30px 3px;
+      }
+      @media #{$min-tablet-width} {
+        width: 54px;
+        height: 33px;
+        border-radius: 21px 2px;
+      }
+      @media #{$min-desktop-width} {
+        width: 78px;
+        height: 47px;
+        border-radius: 30px 3px;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      left: -2px;
+      top: 2px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left center;
+      @media #{$max-mobile-width} {
+        width: 78px;
+        height: 47px;
+      }
+      @media #{$min-tablet-width} {
+        width: 54px;
+        height: 33px;
+      }
+      @media #{$min-desktop-width} {
+        width: 78px;
+        height: 47px;
+      }
+    }
+    &:nth-child(1) {
+      &::after {
+        background-image: url("/wp-content/themes/twist/img/utp--1.svg");
+      }
+    }
+    &:nth-child(2) {
+      &::after {
+        background-image: url("/wp-content/themes/twist/img/utp--2.svg");
+      }
+    }
+    &:nth-child(3) {
+      &::after {
+        background-image: url("/wp-content/themes/twist/img/utp--3.svg");
+      }
+    }
+  }
+}
