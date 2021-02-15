@@ -5,39 +5,54 @@
   @media #{$max-mobile-width} {
     display: none;
   }
+  @media #{$min-tablet-width} {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .partners__wrapper {
     position: relative;
     &::before {
       @media #{$min-tablet-width} {
         position: absolute;
         content: "";
-        top: 0;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        left: 0;
-        width: 50%;
-        height: 500px;
+        width: 60%;
+        height: 600px;
         background-image: url("/wp-content/themes/twist/img/partners__bg--desktop.jpg");
         left: -70px;
+        top: -68px;
       }
       @media #{$min-desktop-width} {
+        width: 649px;
         height: 706px;
         left: -105px;
+        top: -97px;
       }
     }
     &::after {
       @media #{$min-tablet-width} {
         position: absolute;
         content: "";
-        right: -60px;
-        bottom: 120px;
+        right: -93px;
+        bottom: 70px;
         width: 103px;
         height: 96px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         background-image: url("/wp-content/themes/twist/img/partners__leaf.jpg");
+      }
+      @media #{$min-desktop-width} {
+        width: 148px;
+        height: 137px;
+        right: -130px;
+        bottom: 100px;
       }
     }
   }
@@ -49,11 +64,9 @@
       width: 343px;
       margin-left: auto;
       margin-right: 0;
-      padding-top: 31.5px;
     }
     @media #{$min-desktop-width} {
       width: 490px;
-      padding-top: 45px;
     }
   }
   .partners__title {
@@ -68,9 +81,10 @@
     @media #{$min-tablet-width} {
       font-size: 25px;
       line-height: 23px;
+      margin-top: 31px;
     }
     @media #{$min-desktop-width} {
-      margin-bottom: 45px;
+      margin-top: 45px;
       font-size: 36px;
       line-height: 34px;
     }
@@ -82,17 +96,12 @@
     }
   }
   .partners__inputs-container {
-    @media #{$max-mobile-width} {
-      max-width: 296px;
-      @include centers;
-      margin-top: 20px;
-    }
     @media #{$min-tablet-width} {
       width: 294px;
-      margin-top: 17.5px;
+      margin-top: 28px;
     }
     @media #{$min-desktop-width} {
-      margin-top: 25px;
+      margin-top: 40px;
     }
   }
   .partners__input,
