@@ -1,0 +1,10 @@
+.products {
+  padding-top: 35px;
+  @media #{$min-desktop-width} {
+    padding-top: 50px;
+  }
+  .products__title {
+    display: block;
+    text-align: center;
+  }
+}
