@@ -73,15 +73,15 @@
     position: relative;
     z-index: 2;
     @media #{$max-mobile-width} {
-      max-width: 245px;
+      max-width: 260px;
       @include centers;
     }
     @media #{$min-tablet-width} {
-      width: 245px;
+      width: 320px;
       flex-shrink: 0;
     }
     @media #{$min-desktop-width} {
-      width: 350px;
+      width: 450px;
     }
   }
   .need__text-container {

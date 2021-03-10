@@ -1,4 +1,6 @@
 .vs {
+  position: relative;
+  z-index: 2;
   .vs__wrapper {
     @include paddings;
     @include centers;
