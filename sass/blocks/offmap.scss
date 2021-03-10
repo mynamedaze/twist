@@ -1,3 +1,14 @@
 .offmap {
   padding-bottom: 30px;
+  .offmap__wrapper {
+    @include section-width;
+    @include paddings;
+    @include centers;
+  }
+  .offmap__notice {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+    font-style: italic;
+  }
 }

@@ -44,15 +44,15 @@
     font-weight: 400;
     color: $color--alt;
     @media #{$max-mobile-width} {
+      max-width: 350px;
       font-size: 30px;
       line-height: 31px;
       margin-top: 10px;
-      max-width: 300px;
       @include centers;
       text-align: right;
     }
     @media #{$min-tablet-width} {
-      width: 252px;
+      width: 350px;
       margin-left: auto;
       margin-right: 0;
       transform: translateX(-14px);
@@ -61,7 +61,7 @@
       font-size: 28px;
     }
     @media #{$min-desktop-width} {
-      width: 360px;
+      width: 500px;
       margin-left: auto;
       margin-right: 0;
       transform: translateX(20px);

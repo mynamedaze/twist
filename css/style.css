@@ -127,12 +127,14 @@
       line-height: 57px; } }
 
 .common-input {
-  height: 50px;
-  border-top: 0 solid transparent;
-  border-left: 0 solid transparent;
-  border-right: 0 solid transparent;
-  border-bottom: 2px solid #1A1C00;
-  background-color: transparent; }
+  height: 50px !important;
+  border-top: 0 solid transparent !important;
+  border-left: 0 solid transparent !important;
+  border-right: 0 solid transparent !important;
+  border-bottom: 2px solid #1A1C00 !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 transparent !important;
+  box-shadow: 0 0 0 transparent !important; }
 
 .common-input::-webkit-input-placeholder {
   color: #1A1C00; }
@@ -191,7 +193,7 @@
     transform: translate(7px, 7px); }
 
 .confid__checkbox {
-  display: none; }
+  display: none !important; }
 
 .confid__label {
   position: relative;
@@ -269,16 +271,16 @@
   color: #74BE0F; }
   @media (max-width: 767px) {
     .intro .intro__subtitle {
+      max-width: 350px;
       font-size: 30px;
       line-height: 31px;
       margin-top: 10px;
-      max-width: 300px;
       margin-left: auto;
       margin-right: auto;
       text-align: right; } }
   @media (min-width: 768px) {
     .intro .intro__subtitle {
-      width: 252px;
+      width: 350px;
       margin-left: auto;
       margin-right: 0;
       -webkit-transform: translateX(-14px);
@@ -288,7 +290,7 @@
       font-size: 28px; } }
   @media (min-width: 1141px) {
     .intro .intro__subtitle {
-      width: 360px;
+      width: 500px;
       margin-left: auto;
       margin-right: 0;
       -webkit-transform: translateX(20px);
@@ -461,6 +463,15 @@
     .utp .utp__item:nth-child(3)::after {
       background-image: url("/wp-content/themes/twist/img/utp--3.svg"); }
 
+.products {
+  padding-top: 35px; }
+  @media (min-width: 1141px) {
+    .products {
+      padding-top: 50px; } }
+  .products .products__title {
+    display: block;
+    text-align: center; }
+
 @media (max-width: 767px) {
   .offline {
     padding-top: 20px;
@@ -546,6 +557,30 @@
 .offline .offline__choose {
   font-weight: 700;
   display: block; }
+
+.offmap {
+  padding-bottom: 30px; }
+  .offmap .offmap__wrapper {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 767px) {
+      .offmap .offmap__wrapper {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (min-width: 768px) {
+      .offmap .offmap__wrapper {
+        padding-left: 45px;
+        padding-right: 45px; } }
+    @media (min-width: 1141px) {
+      .offmap .offmap__wrapper {
+        padding-left: 50px;
+        padding-right: 50px; } }
+  .offmap .offmap__notice {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+    font-style: italic; }
 
 .natural .natural__wrapper {
   max-width: 1300px;
