@@ -471,6 +471,9 @@
   .products .products__title {
     display: block;
     text-align: center; }
+    .products .products__title a {
+      color: #1A1C00 !important;
+      text-decoration: none; }
 
 @media (max-width: 767px) {
   .offline {
