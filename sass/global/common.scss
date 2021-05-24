@@ -2,7 +2,8 @@
   margin-top: 0;
   margin-bottom: 0;
   font-family: $font--title;
-  font-weight: 400;
+  font-weight: 700;
+  text-transform: uppercase;
   @media #{$max-mobile-width} {
     font-size: 42px;
     letter-spacing: 1.2px;
@@ -21,17 +22,18 @@
   margin-bottom: 0;
   font-family: $font--subtitle;
   font-weight: 400;
+  font-style: italic;
   @media #{$max-mobile-width} {
-    font-size: 42px;
-    line-height: 39px;
+    font-size: 28px;
+    line-height: 28px;
   }
   @media #{$min-tablet-width} {
-    font-size: 42px;
-    line-height: 39px;
+    font-size: 28px;
+    line-height: 28px;
   }
   @media #{$min-desktop-width} {
-    font-size: 60px;
-    line-height: 57px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 .common-input {

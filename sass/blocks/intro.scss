@@ -1,4 +1,13 @@
 .intro {
+  background: #e5ff90;
+  background: -moz-linear-gradient(45deg,  #e5ff90 0%, #b5e1ff 100%);
+  background: -webkit-linear-gradient(45deg,  #e5ff90 0%,#b5e1ff 100%);
+  background: linear-gradient(45deg,  #e5ff90 0%,#b5e1ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5ff90', endColorstr='#b5e1ff',GradientType=1 );
+  margin-bottom: 56px;
+  @media #{$min-desktop-width} {
+    margin-bottom: 70px;
+  }
   .intro__wrapper {
     @include section-width;
     @include paddings;
@@ -42,10 +51,10 @@
     margin-bottom: 0;
     font-family: $font--subtitle;
     font-weight: 400;
-    color: $color--alt;
+    color: $color--main;
     @media #{$max-mobile-width} {
       max-width: 350px;
-      font-size: 30px;
+      font-size: 18px;
       line-height: 31px;
       margin-top: 10px;
       @include centers;
@@ -58,7 +67,7 @@
       transform: translateX(-14px);
       line-height: 28px;
       margin-top: 7px;
-      font-size: 28px;
+      font-size: 18px;
     }
     @media #{$min-desktop-width} {
       width: 500px;
@@ -67,7 +76,7 @@
       transform: translateX(20px);
       line-height: 40px;
       margin-top: 10px;
-      font-size: 40px;
+      font-size: 28px;
     }
   }
   .intro__bg-container {
@@ -104,6 +113,7 @@
     }
   }
   .intro__splash-wrapper {
+    display: none;
     z-index: 2;
     position: absolute;
     @media #{$max-mobile-width} {
