@@ -48,17 +48,17 @@
 .common-input:-moz-placeholder           {color: $border-main;}/* Firefox 18- */
 .common-input:-ms-input-placeholder      {color: $border-main;}
 .common-button {
-  border-radius: 5px;
-  background-color: transparent;
-  height: 60px;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-  border: 0 solid transparent;
+  border-radius: 5px !important;
+  background-color: transparent !important;
+  height: 60px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+  border: 0 solid transparent !important;
   span {
-    position: relative;
-    z-index: 3;
+    position: relative !important;
+    z-index: 3 !important;
   }
   &::before {
     position: absolute;

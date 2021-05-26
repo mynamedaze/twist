@@ -208,7 +208,7 @@
       margin-top: 35px;
     }
   }
-  #choose-confid-checkbox:checked ~ .confid__label {
+  #choose-confid-checkbox:checked ~ .wpcf7-list-item-label {
     &::after {
       position: absolute;
       content: "";
