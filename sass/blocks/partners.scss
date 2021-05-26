@@ -116,6 +116,16 @@
       margin-top: 20px;
     }
   }
+  .partners__textarea {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    @media #{$min-desktop-width} {
+      margin-top: 30px;
+    }
+  }
   .partners__submit {
     margin-top: 35px;
     @media #{$min-desktop-width} {
@@ -140,7 +150,7 @@
       margin-top: 35px;
     }
   }
-  #partners-confid-checkbox:checked ~ .confid__label {
+  #partners-confid-checkbox:checked ~ .wpcf7-list-item-label {
     &::after {
       position: absolute;
       content: "";

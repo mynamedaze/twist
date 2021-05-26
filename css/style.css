@@ -167,17 +167,17 @@
   color: #1A1C00; }
 
 .common-button {
-  border-radius: 5px;
-  background-color: transparent;
-  height: 60px;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-  border: 0 solid transparent; }
+  border-radius: 5px !important;
+  background-color: transparent !important;
+  height: 60px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+  border: 0 solid transparent !important; }
   .common-button span {
-    position: relative;
-    z-index: 3; }
+    position: relative !important;
+    z-index: 3 !important; }
   .common-button::before {
     position: absolute;
     z-index: 1;
@@ -211,15 +211,14 @@
 .confid__checkbox {
   display: none !important; }
 
-.confid__label {
+.confid .wpcf7-list-item-label {
   position: relative;
   padding-left: 30px;
-  margin-top: 30px;
   display: block; }
   @media (max-width: 767px) {
-    .confid__label {
+    .confid .wpcf7-list-item-label {
       line-height: 21px; } }
-  .confid__label::before {
+  .confid .wpcf7-list-item-label::before {
     position: absolute;
     content: "";
     left: 0;
@@ -576,6 +575,9 @@
   .products .products__title {
     display: block;
     text-align: center; }
+    .products .products__title a {
+      color: #1A1C00 !important;
+      text-decoration: none; }
 
 @media (max-width: 767px) {
   .offline {
@@ -1107,7 +1109,7 @@
   .choose .choose__confid-container {
     margin-top: 35px; } }
 
-.choose #choose-confid-checkbox:checked ~ .confid__label::after {
+.choose #choose-confid-checkbox:checked ~ .wpcf7-list-item-label::after {
   position: absolute;
   content: "";
   left: 4px;
@@ -1595,6 +1597,15 @@
     @media (min-width: 1141px) {
       .partners .partners__input {
         margin-top: 20px; } }
+  .partners .partners__textarea {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-top: 20px;
+    display: block;
+    width: 100%; }
+    @media (min-width: 1141px) {
+      .partners .partners__textarea {
+        margin-top: 30px; } }
   .partners .partners__submit {
     margin-top: 35px; }
     @media (min-width: 1141px) {
@@ -1616,7 +1627,7 @@
   @media (min-width: 1141px) {
     .partners .partners__confid-container {
       margin-top: 35px; } }
-  .partners #partners-confid-checkbox:checked ~ .confid__label::after {
+  .partners #partners-confid-checkbox:checked ~ .wpcf7-list-item-label::after {
     position: absolute;
     content: "";
     left: 4px;
