@@ -22,7 +22,7 @@
   margin-bottom: 0;
   font-family: $font--subtitle;
   font-weight: 400;
-  font-style: italic;
+  font-style: italic !important;
   @media #{$max-mobile-width} {
     font-size: 28px;
     line-height: 28px;

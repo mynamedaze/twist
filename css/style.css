@@ -128,7 +128,7 @@
   margin-bottom: 0;
   font-family: "Century Gothic", Arial, serif;
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic !important; }
   @media (max-width: 767px) {
     .common-subtitle {
       font-size: 28px;
@@ -1600,6 +1600,10 @@
     @media (min-width: 1141px) {
       .partners .partners__submit {
         margin-top: 54px; } }
+  .partners .partners__textarea {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-top: 30px; }
   @media (max-width: 767px) {
     .partners .partners__confid-container {
       max-width: 195px;
