@@ -24,6 +24,7 @@
     @media #{$min-tablet-width} {
       width: 580px;
       height: 620px;
+      transform: translateX(-140px);
     }
   }
   .choose__img-splash-container {

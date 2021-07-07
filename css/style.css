@@ -745,7 +745,9 @@
     background-image: url("/wp-content/themes/twist/img/natural__splash-bg--desktop.png"); } }
 
 .natural .natural__title {
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 2; }
 
 .natural .natural__list {
   list-style-type: none;
@@ -773,13 +775,9 @@
       line-height: 25.6px; } }
   .natural .natural__item.natural__item--1 {
     padding-top: 122px; }
-    @media (min-width: 768px) {
-      .natural .natural__item.natural__item--1 {
-        margin-right: 24px; } }
     @media (min-width: 1141px) {
       .natural .natural__item.natural__item--1 {
-        padding-top: 175px;
-        margin-right: 34px; } }
+        padding-top: 175px; } }
     .natural .natural__item.natural__item--1::before {
       position: absolute;
       content: "";
@@ -827,12 +825,10 @@
           height: 252px;
           background-image: url("/wp-content/themes/twist/img/natural__2--desktop.png"); } }
   .natural .natural__item.natural__item--3 {
-    padding-top: 122px;
-    margin-left: 24px; }
+    padding-top: 122px; }
     @media (min-width: 1141px) {
       .natural .natural__item.natural__item--3 {
-        padding-top: 175px;
-        margin-left: 34px; } }
+        padding-top: 175px; } }
     .natural .natural__item.natural__item--3::before {
       position: absolute;
       content: "";
@@ -926,7 +922,9 @@
   @media (min-width: 768px) {
     .choose .choose__img-container {
       width: 580px;
-      height: 620px; } }
+      height: 620px;
+      -webkit-transform: translateX(-140px);
+      transform: translateX(-140px); } }
 
 @media (min-width: 768px) {
   .choose .choose__img-splash-container {
@@ -1137,11 +1135,6 @@
     .need .need__wrapper {
       padding-left: 50px;
       padding-right: 50px; } }
-  @media (min-width: 768px) {
-    .need .need__wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
   @media (min-width: 1141px) {
     .need .need__wrapper {
       padding-top: 30px;
@@ -1210,14 +1203,6 @@
       max-width: 260px;
       margin-left: auto;
       margin-right: auto; } }
-  @media (min-width: 768px) {
-    .need .need__title {
-      width: 320px;
-      -ms-flex-negative: 0;
-      flex-shrink: 0; } }
-  @media (min-width: 1141px) {
-    .need .need__title {
-      width: 450px; } }
 
 .need .need__text-container {
   position: relative;

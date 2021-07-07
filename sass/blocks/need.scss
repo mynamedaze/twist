@@ -6,9 +6,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
-    @media #{$min-tablet-width} {
-      display: flex;
-    }
     @media #{$min-desktop-width} {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -75,13 +72,6 @@
     @media #{$max-mobile-width} {
       max-width: 260px;
       @include centers;
-    }
-    @media #{$min-tablet-width} {
-      width: 320px;
-      flex-shrink: 0;
-    }
-    @media #{$min-desktop-width} {
-      width: 450px;
     }
   }
   .need__text-container {

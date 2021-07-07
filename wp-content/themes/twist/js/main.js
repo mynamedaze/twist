@@ -2,6 +2,8 @@ jQuery(document).ready(function () {
   if (jQuery('.natural')) {
 
     jQuery(".natural__list").owlCarousel({
+        loop: true,
+        autoplay: true,
       responsive: {
         0: {
           items: 1,
@@ -10,9 +12,9 @@ jQuery(document).ready(function () {
           dots: false
         },
         768: {
-          items: 3,
-          mouseDrag: false,
-          touchDrag: false
+          items: 1,
+          nav: false,
+          margin: 10
         }
       }
     });
