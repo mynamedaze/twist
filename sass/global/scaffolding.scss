@@ -53,6 +53,9 @@
   .disable {
     display: none !important;
   }
+  .soft-disable {
+    display: none;
+  }
   a {
     color: $color--main;
     text-decoration: underline;

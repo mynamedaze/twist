@@ -1,0 +1,44 @@
+.main-cat {
+  .main-cat__wrapper {
+    @include paddings;
+    @include section-width;
+    @include centers;
+    padding-top: 20px;
+    @media #{$min-desktop-width} {
+      padding-top: 40px;
+    }
+  }
+  .main-cat__buttons {
+    text-align: center;
+  }
+  .main-cat__button {
+    background-color: #fff;
+    border: 2px solid $color--main;
+    border-radius: 5px;
+
+    color: $color--main;
+
+    text-transform: uppercase;
+    font-family: $font--title;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    min-height: 40px;
+    font-size: 14px;
+    margin-top: 10px;
+    @media #{$min-desktop-width} {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 10px 20px;
+      min-height: 60px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 124, 0.5);
+    }
+    &.active {
+      background-color: #8bc34a;
+    }
+  }
+}
