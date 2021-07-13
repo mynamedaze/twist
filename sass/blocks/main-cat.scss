@@ -3,9 +3,9 @@
     @include paddings;
     @include section-width;
     @include centers;
-    padding-top: 20px;
+    padding-top: 7px;
     @media #{$min-desktop-width} {
-      padding-top: 40px;
+      padding-top: 10px;
     }
   }
   .main-cat__buttons {
@@ -19,13 +19,24 @@
     color: $color--main;
 
     text-transform: uppercase;
-    font-family: $font--title;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
-    min-height: 40px;
-    font-size: 14px;
-    margin-top: 10px;
+    font-family: $font--gil;
+    font-weight: 700;
+    @media #{$max-mobile-width} {
+      font-size: 12px;
+      min-height: 30px;
+      padding: 3px 5px;
+      margin-left: 3px;
+      margin-right: 3px;
+      margin-top: 6px;
+    }
+    @media #{$min-tablet-width} {
+      font-size: 14px;
+      min-height: 40px;
+      padding: 5px 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 10px;
+    }
     @media #{$min-desktop-width} {
       margin-left: 10px;
       margin-right: 10px;
@@ -40,5 +51,10 @@
     &.active {
       background-color: #8bc34a;
     }
+  }
+}
+.main-cat__list {
+  &.soft-disable {
+    display: none;
   }
 }

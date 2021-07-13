@@ -9,7 +9,28 @@
     padding-bottom: 30px;
     @media #{$min-tablet-width} {
       display: flex;
+      position: relative;
     }
+    //&::after {
+    //  @media #{$min-tablet-width} {
+    //    position: absolute;
+    //    content: "";
+    //    width: 530px;
+    //    height: 563px;
+    //    left: -330px;
+    //    bottom: -80px;
+    //    background-repeat: no-repeat;
+    //    background-position: center;
+    //    background-size: contain;
+    //    background-image: url("/wp-content/themes/twist/img/sertif__splash.jpg");
+    //  }
+    //  @media #{$min-desktop-width} {
+    //    width: 758px;
+    //    height: 805px;
+    //    left: -500px;
+    //    bottom: -350px;
+    //  }
+    //}
   }
   .elina__title {
     text-transform: none;
@@ -98,9 +119,7 @@
     width: 204px;
     position: relative;
     margin-top: 28px;
-    @media #{$max-mobile-width} {
-      display: none;
-    }
+    display: none !important;
     @media #{$min-desktop-width} {
       margin-top: 40px;
       margin-left: 75px;

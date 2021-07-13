@@ -1,0 +1,32 @@
+.superbanner {
+  .superbanner__list {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  .superbanner__item-container {
+    @include section-width;
+    @include paddings;
+    @include centers;
+  }
+  .present-ecoshopper {
+    background: rgb(200,251,137);
+    background: -moz-linear-gradient(left,  rgba(200,251,137,1) 0%, rgba(125,185,232,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(200,251,137,1) 0%,rgba(125,185,232,1) 100%);
+    background: linear-gradient(to right,  rgba(200,251,137,1) 0%,rgba(125,185,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8fb89', endColorstr='#7db9e8',GradientType=1 );
+  }
+  .sirop-discount {
+    background: rgb(251,137,226);
+    background: -moz-linear-gradient(left,  rgba(251,137,226,1) 0%, rgba(245,255,124,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(251,137,226,1) 0%,rgba(245,255,124,1) 100%);
+    background: linear-gradient(to right,  rgba(251,137,226,1) 0%,rgba(245,255,124,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb89e2', endColorstr='#f5ff7c',GradientType=1 );
+  }
+  .beauty-inside {
+    background: rgb(111,255,220);
+    background: -moz-linear-gradient(left,  rgba(111,255,220,1) 0%, rgba(225,255,196,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(111,255,220,1) 0%,rgba(225,255,196,1) 100%);
+    background: linear-gradient(to right,  rgba(111,255,220,1) 0%,rgba(225,255,196,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fffdc', endColorstr='#e1ffc4',GradientType=1 );
+  }
+}

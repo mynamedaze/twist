@@ -43,6 +43,15 @@ jQuery(document).ready(function () {
 
     }
 
+    if (jQuery('.superbanner__list')) {
+        jQuery(".superbanner__list").owlCarousel({
+            items: 1,
+            loop: true,
+            dots: true,
+            nav: false
+        });
+    }
+
   if (jQuery('.common-input-tel')) {
       jQuery('.common-input-tel').inputmask("+X (999) 999-9999", {
           definitions: {
@@ -71,4 +80,20 @@ jQuery(document).ready(function () {
             fbq('track', 'Lead');
         }
     }, false );
+
+    if (jQuery('.main-cat') && ('.main-cat__list')) {
+        let mainCatButton = document.getElementsByClassName('main-cat__button');
+        mainCatButton = Array.prototype.slice.call(mainCatButton);
+        let mainCatList = document.getElementsByClassName('main-cat__list');
+        mainCatList = Array.prototype.slice.call(mainCatList);
+
+        mainCatButton.forEach(function (item, index) {
+            jQuery(item).click(function () {
+                jQuery(mainCatButton).removeClass('active');
+                jQuery(item).addClass('active');
+                jQuery(mainCatList).addClass('soft-disable');
+                jQuery(mainCatList[index]).removeClass('soft-disable');
+            });
+        })
+    }
 });

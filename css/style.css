@@ -99,8 +99,6 @@
     /* Блочный элемент */ }
   .main-page .disable {
     display: none !important; }
-  .main-page .soft-disable {
-    display: none; }
   .main-page a {
     color: #1A1C00;
     text-decoration: underline; }
@@ -1633,7 +1631,7 @@
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px; }
+  padding-top: 7px; }
   @media (max-width: 767px) {
     .main-cat .main-cat__wrapper {
       padding-left: 20px;
@@ -1648,7 +1646,7 @@
       padding-right: 50px; } }
   @media (min-width: 1141px) {
     .main-cat .main-cat__wrapper {
-      padding-top: 40px; } }
+      padding-top: 10px; } }
 
 .main-cat .main-cat__buttons {
   text-align: center; }
@@ -1659,13 +1657,24 @@
   border-radius: 5px;
   color: #1A1C00;
   text-transform: uppercase;
-  font-family: "Gilroy", Arial, sans-serif;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 5px 10px;
-  min-height: 40px;
-  font-size: 14px;
-  margin-top: 10px; }
+  font-family: "Gilroy", Arial, serif;
+  font-weight: 700; }
+  @media (max-width: 767px) {
+    .main-cat .main-cat__button {
+      font-size: 12px;
+      min-height: 30px;
+      padding: 3px 5px;
+      margin-left: 3px;
+      margin-right: 3px;
+      margin-top: 6px; } }
+  @media (min-width: 768px) {
+    .main-cat .main-cat__button {
+      font-size: 14px;
+      min-height: 40px;
+      padding: 5px 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 10px; } }
   @media (min-width: 1141px) {
     .main-cat .main-cat__button {
       margin-left: 10px;
@@ -1678,6 +1687,10 @@
     background-color: rgba(255, 255, 124, 0.5); }
   .main-cat .main-cat__button.active {
     background-color: #8bc34a; }
+
+.main-cat__list.soft-disable {
+  display: none; }
+
 .elina {
   position: relative;
   z-index: 2; }
@@ -1703,7 +1716,8 @@
       .elina .elina__wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; } }
+        display: flex;
+        position: relative; } }
   .elina .elina__title {
     text-transform: none;
     font-family: "Silver Age Queens", Arial, sans-serif;
@@ -1787,10 +1801,8 @@
     font-size: 0;
     width: 204px;
     position: relative;
-    margin-top: 28px; }
-    @media (max-width: 767px) {
-      .elina .elina__slider {
-        display: none; } }
+    margin-top: 28px;
+    display: none !important; }
     @media (min-width: 1141px) {
       .elina .elina__slider {
         margin-top: 40px;
@@ -1807,3 +1819,42 @@
       border-radius: 5px;
       width: 100%;
       height: 100%; }
+
+.superbanner .superbanner__list {
+  padding-left: 0;
+  list-style-type: none; }
+
+.superbanner .superbanner__item-container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 767px) {
+    .superbanner .superbanner__item-container {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 768px) {
+    .superbanner .superbanner__item-container {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media (min-width: 1141px) {
+    .superbanner .superbanner__item-container {
+      padding-left: 50px;
+      padding-right: 50px; } }
+
+.superbanner .present-ecoshopper {
+  background: #c8fb89;
+  background: -webkit-gradient(linear, left top, right top, from(#c8fb89), to(#7db9e8));
+  background: linear-gradient(to right, #c8fb89 0%, #7db9e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8fb89', endColorstr='#7db9e8',GradientType=1 ); }
+
+.superbanner .sirop-discount {
+  background: #fb89e2;
+  background: -webkit-gradient(linear, left top, right top, from(#fb89e2), to(#f5ff7c));
+  background: linear-gradient(to right, #fb89e2 0%, #f5ff7c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb89e2', endColorstr='#f5ff7c',GradientType=1 ); }
+
+.superbanner .beauty-inside {
+  background: #6fffdc;
+  background: -webkit-gradient(linear, left top, right top, from(#6fffdc), to(#e1ffc4));
+  background: linear-gradient(to right, #6fffdc 0%, #e1ffc4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fffdc', endColorstr='#e1ffc4',GradientType=1 ); }
