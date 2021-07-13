@@ -32,6 +32,17 @@ jQuery(document).ready(function () {
 
   }
 
+    if (jQuery('.elina')) {
+
+        jQuery(".elina__slider").owlCarousel({
+            items: 1,
+            loop: true,
+            dots: false,
+            nav: false
+        });
+
+    }
+
   if (jQuery('.common-input-tel')) {
       jQuery('.common-input-tel').inputmask("+X (999) 999-9999", {
           definitions: {

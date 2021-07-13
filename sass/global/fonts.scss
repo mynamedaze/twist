@@ -52,3 +52,10 @@
   font-weight: 400;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Silver Age Queens';
+  src: url('/wp-content/themes/twist/fonts/silveraraqueensg-webfont.woff2') format('woff2'),
+  url('/wp-content/themes/twist/fonts/silveraraqueensg-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}

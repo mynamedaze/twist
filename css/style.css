@@ -41,6 +41,12 @@
   font-weight: 400;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Silver Age Queens';
+  src: url("/wp-content/themes/twist/fonts/silveraraqueensg-webfont.woff2") format("woff2"), url("/wp-content/themes/twist/fonts/silveraraqueensg-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
 .main-page {
   overflow: hidden; }
   .main-page *,
@@ -107,7 +113,7 @@
 .common-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Silver Age Queens", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase; }
   @media (max-width: 767px) {
@@ -116,11 +122,11 @@
       letter-spacing: 1.2px; } }
   @media (min-width: 768px) {
     .common-title {
-      font-size: 49px;
+      font-size: 42px;
       letter-spacing: 1.4px; } }
   @media (min-width: 1141px) {
     .common-title {
-      font-size: 70px;
+      font-size: 60px;
       letter-spacing: 2px; } }
 
 .common-subtitle {
@@ -1620,3 +1626,133 @@
     width: 10px;
     height: 10px;
     background-color: #1A1C00; }
+
+.elina {
+  position: relative;
+  z-index: 2; }
+  .elina .elina__wrapper {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    @media (max-width: 767px) {
+      .elina .elina__wrapper {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (min-width: 768px) {
+      .elina .elina__wrapper {
+        padding-left: 45px;
+        padding-right: 45px; } }
+    @media (min-width: 1141px) {
+      .elina .elina__wrapper {
+        padding-left: 50px;
+        padding-right: 50px; } }
+    @media (min-width: 768px) {
+      .elina .elina__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  .elina .elina__title {
+    text-transform: none;
+    font-family: "Silver Age Queens", Arial, sans-serif;
+    font-size: 42px;
+    line-height: 48px;
+    margin-top: 0; }
+    @media (min-width: 1141px) {
+      .elina .elina__title {
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 55px; } }
+  .elina .elina__text-container {
+    position: relative;
+    z-index: 2; }
+    @media (min-width: 768px) {
+      .elina .elina__text-container {
+        width: 50%;
+        padding-top: 90px; } }
+    .elina .elina__text-container p {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 17px; }
+      @media (min-width: 1141px) {
+        .elina .elina__text-container p {
+          font-size: 18px;
+          line-height: 29px;
+          margin-top: 25px; } }
+  .elina .elina__visual-container {
+    position: relative; }
+    @media (max-width: 767px) {
+      .elina .elina__visual-container {
+        padding-top: 550px; } }
+    @media (min-width: 768px) {
+      .elina .elina__visual-container {
+        width: 50%;
+        padding-top: 550px;
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (min-width: 1141px) {
+      .elina .elina__visual-container {
+        padding-left: 30px;
+        padding-right: 30px; } }
+    .elina .elina__visual-container::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 0;
+      width: 689px;
+      height: 629px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("/wp-content/themes/twist/img/elina.jpg");
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  .elina .elina__description {
+    font-family: "Century Gothic", Arial, serif;
+    font-size: 14px;
+    line-height: 21px;
+    position: relative;
+    z-index: 2;
+    display: block; }
+    @media (max-width: 767px) {
+      .elina .elina__description {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 768px) {
+      .elina .elina__description {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 1141px) {
+      .elina .elina__description {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 380px; } }
+  .elina .elina__slider {
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 0;
+    width: 204px;
+    position: relative;
+    margin-top: 28px; }
+    @media (max-width: 767px) {
+      .elina .elina__slider {
+        display: none; } }
+    @media (min-width: 1141px) {
+      .elina .elina__slider {
+        margin-top: 40px;
+        margin-left: 75px; } }
+    .elina .elina__slider .owl-stage-outer {
+      z-index: 3; }
+    .elina .elina__slider::after {
+      position: absolute;
+      z-index: 2;
+      content: "";
+      right: -24px;
+      bottom: -20px;
+      background-color: #F3A6BD;
+      border-radius: 5px;
+      width: 100%;
+      height: 100%; }
