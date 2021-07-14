@@ -48,7 +48,9 @@ jQuery(document).ready(function () {
             items: 1,
             loop: true,
             dots: true,
-            nav: false
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 8000
         });
     }
 

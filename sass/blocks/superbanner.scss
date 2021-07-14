@@ -1,12 +1,44 @@
 .superbanner {
+  padding-bottom: 60px;
   .superbanner__list {
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+  }
+  .superbanner__item {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 100%;
+    }
   }
   .superbanner__item-container {
     @include section-width;
     @include paddings;
     @include centers;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 20px;
+    @media #{$max-mobile-width} {
+      padding-top: 40px;
+      min-height: 340px;
+    }
+    @media #{$min-tablet-width} {
+      min-height: 609px;
+      padding-top: 91px;
+    }
+    @media #{$min-desktop-width} {
+      padding-top: 129px;
+    }
   }
   .present-ecoshopper {
     background: rgb(200,251,137);
@@ -14,6 +46,12 @@
     background: -webkit-linear-gradient(left,  rgba(200,251,137,1) 0%,rgba(125,185,232,1) 100%);
     background: linear-gradient(to right,  rgba(200,251,137,1) 0%,rgba(125,185,232,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8fb89', endColorstr='#7db9e8',GradientType=1 );
+    &::after {
+      background-image: url("/wp-content/uploads/2021/banners/present-ecoshopper.png");
+      @media #{$max-mobile-width} {
+        background-position: 55% center;
+      }
+    }
   }
   .sirop-discount {
     background: rgb(251,137,226);
@@ -21,6 +59,9 @@
     background: -webkit-linear-gradient(left,  rgba(251,137,226,1) 0%,rgba(245,255,124,1) 100%);
     background: linear-gradient(to right,  rgba(251,137,226,1) 0%,rgba(245,255,124,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb89e2', endColorstr='#f5ff7c',GradientType=1 );
+    &::after {
+      background-image: url("/wp-content/uploads/2021/banners/sirop-discount.png");
+    }
   }
   .beauty-inside {
     background: rgb(111,255,220);
@@ -28,5 +69,93 @@
     background: -webkit-linear-gradient(left,  rgba(111,255,220,1) 0%,rgba(225,255,196,1) 100%);
     background: linear-gradient(to right,  rgba(111,255,220,1) 0%,rgba(225,255,196,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fffdc', endColorstr='#e1ffc4',GradientType=1 );
+  }
+  .superbanner__title {
+    font-family: $font--title;
+    display: block;
+    @media #{$max-mobile-width} {
+      font-size: 30px;
+    }
+    @media #{$min-tablet-width} {
+      font-size: 46px;
+      line-height: 60px;
+    }
+    @media #{$min-desktop-width} {
+      font-size: 66px;
+      line-height: 85px;
+    }
+  }
+  .superbanner__subtitle {
+    max-width: 377px;
+    display: block;
+    font-weight: 700;
+    @media #{$max-mobile-width} {
+      margin-top: 13px;
+      max-width: 200px;
+      font-size: 14px;
+    }
+    @media #{$min-tablet-width} {
+      margin-top: 13px;
+      font-size: 17px;
+      line-height: 22px;
+    }
+    @media #{$min-desktop-width} {
+      font-size: 24px;
+      line-height: 31px;
+      margin-top: 17px;
+    }
+  }
+  .superbanner__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid $color--main;
+    border-radius: 5px;
+    color: $color--main;
+    text-transform: uppercase;
+    font-family: $font--main;
+    font-weight: 700;
+    font-size: 16px;
+    @media #{$max-mobile-width} {
+      width: 200px;
+      min-height: 50px;
+      margin-top: 20px;
+      background-color: #8bc34a;
+    }
+    @media #{$min-tablet-width} {
+      margin-top: 28px;
+      width: 293px;
+      min-height: 60px;
+      background-color: transparent;
+    }
+    @media #{$min-desktop-width} {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+    &:hover {
+      background-color: #8bc34a;
+    }
+  }
+  .owl-dots {
+    @include section-width;
+    @include paddings;
+    @include centers;
+    margin-top: -45px !important;
+    position: relative;
+    z-index: 10;
+    text-align: left !important;
+    .owl-dot {
+      span {
+        width: 57px !important;
+        height: 5px !important;
+        border-radius: 0 !important;
+      }
+      &.active {
+        span {
+          background: #000 !important;
+        }
+      }
+    }
   }
 }
