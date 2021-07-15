@@ -1,4 +1,6 @@
 .all-catalog {
+  padding-top: 20px;
+  padding-bottom: 20px;
   .all-catalog__wrapper {
     @include paddings;
     @include centers;

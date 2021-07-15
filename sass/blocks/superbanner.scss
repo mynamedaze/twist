@@ -1,5 +1,7 @@
 .superbanner {
-  padding-bottom: 60px;
+  @media #{$min-tablet-width} {
+    padding-bottom: 60px;
+  }
   .superbanner__list {
     margin-top: 0;
     margin-bottom: 0;
