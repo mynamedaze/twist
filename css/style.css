@@ -1892,6 +1892,8 @@
     background: -webkit-gradient(linear, left top, right top, from(#6fffdc), to(#e1ffc4));
     background: linear-gradient(to right, #6fffdc 0%, #e1ffc4 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fffdc', endColorstr='#e1ffc4',GradientType=1 ); }
+    .superbanner .beauty-inside::after {
+      background-image: url("/wp-content/uploads/2021/banners/beauty-inside.png"); }
   .superbanner .superbanner__title {
     font-family: "Silver Age Queens", Arial, sans-serif;
     display: block; }
@@ -1987,3 +1989,35 @@
       border-radius: 0 !important; }
     .superbanner .owl-dots .owl-dot.active span {
       background: #000 !important; }
+
+.all-catalog .all-catalog__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px; }
+  @media (max-width: 767px) {
+    .all-catalog .all-catalog__wrapper {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 768px) {
+    .all-catalog .all-catalog__wrapper {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media (min-width: 1141px) {
+    .all-catalog .all-catalog__wrapper {
+      padding-left: 50px;
+      padding-right: 50px; } }
+
+.all-catalog .all-catalog__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto; }

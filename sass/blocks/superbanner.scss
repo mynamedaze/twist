@@ -69,6 +69,9 @@
     background: -webkit-linear-gradient(left,  rgba(111,255,220,1) 0%,rgba(225,255,196,1) 100%);
     background: linear-gradient(to right,  rgba(111,255,220,1) 0%,rgba(225,255,196,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fffdc', endColorstr='#e1ffc4',GradientType=1 );
+    &::after {
+      background-image: url("/wp-content/uploads/2021/banners/beauty-inside.png");
+    }
   }
   .superbanner__title {
     font-family: $font--title;

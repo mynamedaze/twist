@@ -1,0 +1,15 @@
+.all-catalog {
+  .all-catalog__wrapper {
+    @include paddings;
+    @include centers;
+    @include section-width;
+  }
+  .all-catalog__link {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    @include centers;
+  }
+}
